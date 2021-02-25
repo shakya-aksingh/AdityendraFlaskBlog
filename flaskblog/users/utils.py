@@ -23,7 +23,7 @@ def save_picture(form_picture):
 
 def send_reset_email(user):
     token = user.get_reset_token()
-    msg = Message('Reset your FlaskApp password',
+    msg = Message('Reset your Adityendra Blog password',
                   sender='noreply@demo.com',
                   recipients=[user.email])
     subject = "Reset your Password"
