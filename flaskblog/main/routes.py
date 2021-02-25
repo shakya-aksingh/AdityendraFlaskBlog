@@ -15,3 +15,8 @@ def home():
 @main.route("/about")
 def about():
     return render_template('about.html', title='About')
+
+
+@main.route("/unsubscribe")
+def unsubscribe():
+    return render_template('unsubscribe.html', title='Unsubscribe')
