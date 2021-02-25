@@ -33,10 +33,5 @@ def send_reset_email(user):
             link=link)
     print(template)
     msg.html = template
-#     msg.html = f'''<h1>Reset your Password</h1>
-# <p>To reset your password, visit the following link:</p>
-# {url_for('users.reset_token', token=token, _external=True)}
-# <p>If you did not make this request then simply ignore this email and no changes will be made.</p>
-# '''
     mail.send(msg)
     
