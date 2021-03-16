@@ -23,7 +23,7 @@ def save_picture(form_picture):
 
 def send_reset_email(user):
     token = user.get_reset_token()
-    msg = Message('Reset your A K SINGH Blog password',
+    msg = Message('Reset Your A K SINGH Blog Password',
                   sender='noreply@demo.com',
                   recipients=[user.email])
     subject = "Reset your Password"
