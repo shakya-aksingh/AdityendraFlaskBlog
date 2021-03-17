@@ -26,7 +26,7 @@ def send_reset_email(user):
     msg = Message('Reset Your A K SINGH Blog Password',
                   sender='noreply@demo.com',
                   recipients=[user.email])
-    subject = "Reset your Password"
+    subject = "Reset Your Password"
     link = url_for('users.reset_token', token=token, _external=True)
     template = render_template(
             'email_template.html',
